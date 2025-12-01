@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch on YouTube</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        a.button {
+            background: #ff0000;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(255,0,0,0.5);
+        }
+        a.button:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click Below to Watch the Playlist on YouTube</h1>
+    <a class="button" href="https://www.youtube.com/playlist?list=PLLLSbCeTVhHFgFrr2sGJPn8cLkDgzfQZR" target="_blank">
+        Open Playlist on YouTube
+    </a>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://www.youtube.com/playlist?list=PLLLSbCeTVhHFgFrr2sGJPn8cLkDgzfQZR";
+        }, 3000);
+    </script>
+</body>
+</html>
